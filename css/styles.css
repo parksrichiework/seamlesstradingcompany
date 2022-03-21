@@ -22,17 +22,19 @@ nav{
 	z-index: 10;
 	margin-top: -30px;	
 	width: 100%;
-	margin-right: -30px;
+	margin-left: -28px;
+
 }
- ul{
+ nav ul{
  	list-style: none;
  	display: inline-block;
  	position: relative;
- 	;
+ 	
  }
  nav ul li{
  	padding-left: px;
- 	width: auto;
+ 	width: 100%;
+ 	font-weight: 60;
  }
 
 a{
@@ -43,39 +45,123 @@ a{
 header{
 	background: var(--blue);
 	width: 100%;
+	margin-top: ;
+	position: relative;
+	border-radius: 15px;
 	
 }
 header img{
 	width: 100%;
-	z-index: 5;
+	z-index: 2;
 }
-header div h2, h3{
+header div h2{
 	text-align: center;
 	color: var(--tan);
+	padding: 0px 10px;
+	font-size: 25px;
+	font-weight: 90;
 }
+header div h3{
+	text-align: center;
+	color: var(--tan);
+	padding: 0px 10px;
+	margin-top: -10px;
+	font-size: 15px;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 90;
+	
+}
+.header-tagline{
+	margin-top: 200px;
+	position: absolute;
+	z-index: 5;
+	text-align: center;
+	width: 100%;
+}
+
+
 
 #header-welcome{
 	transform: translateY(200px);
 	position: inherit;
 	color: #EFEACD;
 	margin-left: 10%;
-	
+	text-shadow: 0 8px 16px 0 rgba(0,0,0,0.19), 0 6px 20px 0 rgba(0,0,0,0.24);
+	font-weight: 90;
 }
 
-.north-america-img{
-	height: 450px;
-	z-index: 6;
-	color: var(--tan);
-}
+
 
 .order-button{
 	color: var(--tan);
 	text-align: center;
 	background-color: var(--blue);
 	border: none;
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
+	/*position: absolute;*/
+	padding: 10px 20px;
+	margin-top: 30px;
+	/*margin-left: 50%;*/
 	border-radius: 30px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	transition: 0.2s ease-in-out;
+	/*z-index: 10;*/
+}
+.order-button:hover {
+	color: var(--blue);
+	/*position: absolute;*/
+	cursor: pointer;
+	background-color: var(--tan);
+	
+	
+}
+.north-america-group{
+	text-align: center;
+}
+.north-america-img{
+	position: relative;
+	width: 70%;
+	height: auto;
+	text-align: center;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	
+}
+
+/*<----------products------------>*/
+
+.products-section{
+	margin-top: 50px;
+	color: var(--blue);
+
+}
+.products-section h2{
+	text-align: center;
+}
+
+
+.list{
+	list-style: square;
+
+
+}
+
+
+/*-----------PHONE DIMENSIONS---------*/
+
+@media screen and (max-width: 400px){
+	#header-welcome{
+	transform: translateY(200px);
+	position: inherit;
+	color: #EFEACD;
+	margin-left: 10%;
+	font-size: 17px;
+	
+}
+.header-tagline{
+	margin-top: 100px;
+	position: absolute;
+	z-index: 5;
+	text-align: center;
+	width: 100%;
+}
 }
