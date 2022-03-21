@@ -1,0 +1,25 @@
+
+/*
+Colors: 
+#367193 - bLUE
+#EFEACD - TAN
+#FFFFFF - white
+#000000 - black*/
+
+body{
+font-family: 'Prata', serif;
+}
+
+nav{
+	color: #EFEACD;
+	background: #367193;
+	padding: 20px;
+}
+ ul{
+ 	list-style: none;
+ }
+a{
+	text-decoration: none;
+
+}
+

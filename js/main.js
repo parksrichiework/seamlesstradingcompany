@@ -19,3 +19,8 @@ inputHolder.addEventListener('click', log)
     function log(){
         console.log()
     }
+
+
+var formInputs= document.querySelector('.input')
+
+console.log(formInputs)

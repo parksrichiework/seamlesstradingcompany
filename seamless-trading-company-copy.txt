@@ -25,3 +25,11 @@ Info on One-Pager
 	Flexible Shipping
 	For Orders please reach out to
 			*email*
+
+
+
+COLORS:
+#367193 - bLUE
+#EFEACD - TAN
+#FFFFFF - white
+#000000 - black
