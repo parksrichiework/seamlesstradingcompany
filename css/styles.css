@@ -9,21 +9,19 @@
 
 body{
 font-family: 'Prata', serif;
-padding-left: 20px;
-padding-right:20px;
+padding: 0px 300px;
 
 
 }
 
 nav{
 	background: var(--blue);
-	padding-top: 20px;
+	padding-top: 26px;
 	position: fixed;
 	z-index: 10;
 	margin-top: -30px;	
 	width: 100%;
-	margin-left: -28px;
-
+	left: 0;
 }
  nav ul{
  	list-style: none;
@@ -32,8 +30,8 @@ nav{
  	
  }
  nav ul li{
- 	padding-left: px;
- 	width: 100%;
+ 	padding: 20px 30px;
+ 	width: 60px;
  	font-weight: 60;
  }
 
@@ -45,7 +43,7 @@ a{
 header{
 	background: var(--blue);
 	width: 100%;
-	margin-top: ;
+	margin-top: -18px;
 	position: relative;
 	border-radius: 15px;
 	
@@ -72,7 +70,7 @@ header div h3{
 	
 }
 .header-tagline{
-	margin-top: 200px;
+	margin-top: 450px;
 	position: absolute;
 	z-index: 5;
 	text-align: center;
@@ -82,7 +80,7 @@ header div h3{
 
 
 #header-welcome{
-	transform: translateY(200px);
+	transform: translateY(315px);
 	position: inherit;
 	color: #EFEACD;
 	margin-left: 10%;
@@ -149,7 +147,17 @@ header div h3{
 /*-----------PHONE DIMENSIONS---------*/
 
 @media screen and (max-width: 400px){
-	#header-welcome{
+
+body{
+	padding: 0px 20px;
+}
+nav{
+	text-align: center;
+	width: 100%;
+	left: 0;
+}
+
+#header-welcome{
 	transform: translateY(200px);
 	position: inherit;
 	color: #EFEACD;
