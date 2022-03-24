@@ -5,12 +5,14 @@
 --tan: #EFEACD;
 --white: #FFFFFF;
 --black: #000000;
+--gray: lightgray;
+--custom: linear-gradient(90deg, red, yellow, blue);
 }
 
 body{
 font-family: 'Prata', serif;
 padding: 0px 300px;
-
+margin-bottom: 0;
 
 }
 
@@ -19,9 +21,11 @@ nav{
 	padding-top: 26px;
 	position: fixed;
 	z-index: 10;
-	margin-top: -30px;	
+	margin-top: -30px;
+	margin-bottom: -30px;	
 	width: 100%;
 	left: 0;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
  nav ul{
  	list-style: none;
@@ -30,7 +34,8 @@ nav{
  	
  }
  nav ul li{
- 	padding: 20px 30px;
+ 	padding-top: 10px;
+ 	padding-bottom: 0;
  	width: 60px;
  	font-weight: 60;
  }
@@ -43,15 +48,18 @@ a{
 header{
 	background: var(--blue);
 	width: 100%;
-	margin-top: -18px;
+	margin-top: -25px;
 	position: relative;
 	border-radius: 15px;
+
 	
 }
 header img{
 	width: 100%;
 	z-index: 2;
+	margin-top: -50px;
 }
+
 header div h2{
 	text-align: center;
 	color: var(--tan);
@@ -78,14 +86,14 @@ header div h3{
 }
 
 
-
-#header-welcome{
+.header-welcome{
 	transform: translateY(315px);
 	position: inherit;
 	color: #EFEACD;
 	margin-left: 10%;
 	text-shadow: 0 8px 16px 0 rgba(0,0,0,0.19), 0 6px 20px 0 rgba(0,0,0,0.24);
 	font-weight: 90;
+	font-size: 50px;
 }
 
 
@@ -104,6 +112,7 @@ header div h3{
 	transition: 0.2s ease-in-out;
 	/*z-index: 10;*/
 }
+
 .order-button:hover {
 	color: var(--blue);
 	/*position: absolute;*/
@@ -128,7 +137,7 @@ header div h3{
 /*<----------products------------>*/
 
 .products-section{
-	margin-top: 50px;
+	margin-top: 100px;
 	color: var(--blue);
 
 }
@@ -139,9 +148,153 @@ header div h3{
 
 .list{
 	list-style: square;
+}
 
+.circle-white{
+  height: 15px;
+  width: 15px;
+  background: var(--white);
+  border: solid 2px var(--blue);
+  border-radius: 50%;
+  display: inline-block;
+}
+.circle-gray{
+  height: 15px;
+  width: 15px;
+  background: var(--gray);
+  border-radius: 50%;
+  display: inline-block;
+}
+.circle-black{
+  height: 15px;
+  width: 15px;
+  background: var(--black);
+  border-radius: 50%;
+  display: inline-block;
+}
+.circle-custom{
+  height: 15px;
+  width: 15px;
+  background: var(--custom);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.standard-tee-color{
+	/*padding: -10px 20px;*/
+	padding-left: 10px;
+	margin: 0px;
+}
+
+.about-products ul li{
+	list-style: none;
+	color: var(--blue);
+	text-align: center;
+}
+.about-products li{
+	font-weight: 10;
+}
+
+.product-divider{
+	color: var(--blue);
+	border: solid 1px;
+	margin: 50px 0px;
+}
+
+/*<----------about section------------>*/
+
+
+.about-section{
+	background-image: url(../img/about-bg.png);
+	text-align: center;
+	padding: 40px 0;
+	
+	margin: 70px 0px;
+	color: var(--blue);
+	margin-bottom: 0px;
+	/*margin-left: 0px;*/
+}
+
+.about-divider{
+	color: var(--blue);
+	border: solid 0.25px;
+	width: 50%;
+	margin-left: 290px;
+	text-align: center;
+}
+
+.about-section h2{
+	padding-top: 170px;
+	
+}
+
+.about-section h3{
+	padding-top: 250px;
 
 }
+
+.about-section p{
+	padding: 100px 100px;
+	padding-bottom: 200px;
+}
+
+
+/*----------------Order section--------------------*/
+ footer{
+ 	background-color: var(--blue);
+ 	color: var(--tan);
+ }
+
+ footer form{
+ 	padding: 180px 400px 150px 400px;
+ 	width: 100%; 	
+ 	text-align: center;
+ 	font-size: 35px;
+ 	color: var(--tan);
+ }
+
+ footer input{
+ 	border: var(--blue);
+ 	border-radius: 50px;
+ 	padding: 20px 10px;
+ 	padding-left: 20px;
+ 	margin-bottom: 30px;
+ 	width: 100%;
+ }
+
+ .footer-button{
+ 	border: var(--blue);
+ 	font-family: 'Prata', sans-serif;
+ 	font-size: 20px;
+ 	font-weight: 20;
+ 	border-radius: 50px;
+ 	padding: 20px 0px; 	
+ 	margin-bottom: 30px;
+ 	width: 100%;
+ 	position: relative;
+ 	color: var(--blue);
+ 	background-color: var(--tan);
+ 	transition: 0.3s ease-in-out;
+ 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+
+  .footer-button:hover{
+ 	width: 100%;
+ 	cursor: pointer;
+ 	position: relative;
+ 	color: var(--tan);
+ 	background-color: var(--blue);
+ 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+
+.footer-signature{
+	text-align: center;
+	margin: 0;
+	background: var(--tan);
+	color: var(--blue);
+	font-size: 15px;
+}
+
 
 
 /*-----------PHONE DIMENSIONS---------*/
@@ -155,6 +308,7 @@ nav{
 	text-align: center;
 	width: 100%;
 	left: 0;
+	height: auto;
 }
 
 #header-welcome{
