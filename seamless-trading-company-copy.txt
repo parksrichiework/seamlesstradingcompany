@@ -33,3 +33,21 @@ COLORS:
 #EFEACD - TAN
 #FFFFFF - white
 #000000 - black
+
+
+1. I wanna move the company name from the top left corner to included after the welcome 
+I think it’d be cool to have some fun little interactive thing in that top left corner with just the t-shirt icon, or maybe there could be multiple shirts in some cool design.
+
+2. Lets add a ‘Request Sample’ button at the bottom of the product section. This will need to go to a new page that collect info on what kind of sample they’d like, their info for shipping and terms of requesting a sample (they’ll need to return it). Similarly, lets add an “Order Now” button that will go to an order form. Lets remove the “Order Now’ button on the welcome page but keep the one in the upper right hand corner. 
+
+3. I wanna rework the quantity range language to Starting at 10,000 up to 200,00 pcs. 
+
+4. After the shirt pricing, we should mention that’s before shipping. Lets also add a “Request a Quote” button beneath there. 
+
+5. Lets swap out “Quality" for “Ethical" Production 
+
+6. At the bottom of the Ethical Production section, lets add a button saying Learn more. This will go to a new page that outlines and explains the certifications of the suppliers. 
+
+7. After Flexible Shipping, lets add a button to request a quote. This will go to a form requesting the info needed to build a quote, that’ll become a notification to the company and a rep from the company will reach back out via email with a shipping quote. 
+
+8. Lets remove the order section at the very bottom for now. I think we should develop a more detailed order form instead. 
