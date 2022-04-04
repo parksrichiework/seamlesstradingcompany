@@ -14,6 +14,7 @@ font-family: 'Prata', serif;
 padding: 0px 300px;
 margin-bottom: 0;
 
+
 }
 
 nav{
@@ -334,12 +335,13 @@ margin-bottom: 0;
 
 nav{
 	background: var(--blue);
-	padding-top: 26px;
+	/*padding-top: 26px;*/
 	position: fixed;
 	z-index: 10;
-	margin-top: -30px;
+	margin-top: -70px;
 	margin-bottom: -30px;	
 	width: 100%;
+	height: auto;
 	left: 0;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -350,10 +352,16 @@ nav{
  	
  }
  nav ul li{
- 	padding-top: 10px;
+ 	padding-top: ;
  	padding-bottom: 0;
  	width: 60px;
- 	font-weight: 60;
+ 	font-weight: 25px;
+ 	margin-left: 50px;
+ }
+
+ .col-sm .main-logo{
+ padding-left: -50px;
+
  }
 
 a{
@@ -364,9 +372,11 @@ a{
 header{
 	background: var(--blue);
 	width: 100%;
-	margin-top: -25px;
-	position: relative;
+	margin-top: 0px;
+	position: 50px;
 	border-radius: 15px;
+	/*margin-left: 25px;*/
+	padding-top: 217px;
 
 	
 }
@@ -380,7 +390,7 @@ header div h2{
 	text-align: center;
 	color: var(--tan);
 	padding: 0px 10px;
-	font-size: 25px;
+	font-size: 16px;
 	font-weight: 90;
 }
 header div h3{
@@ -394,7 +404,7 @@ header div h3{
 	
 }
 .header-tagline{
-	margin-top: 450px;
+	margin-top: 132px;
 	position: absolute;
 	z-index: 5;
 	text-align: center;
@@ -403,13 +413,13 @@ header div h3{
 
 
 .header-welcome{
-	transform: translateY(315px);
+	transform: translateY(12px);
 	position: inherit;
 	color: #EFEACD;
 	margin-left: 10%;
 	text-shadow: 0 8px 16px 0 rgba(0,0,0,0.19), 0 6px 20px 0 rgba(0,0,0,0.24);
 	font-weight: 90;
-	font-size: 40px;
+	font-size: 17px;
 }
 
 
@@ -455,6 +465,7 @@ header div h3{
 .products-section{
 	margin-top: 100px;
 	color: var(--blue);
+	margin-left: 46px;
 
 }
 .products-section h2{
@@ -574,7 +585,107 @@ header div h3{
 	/*position: absolute;*/
 	cursor: pointer;
 	background-color: var(--blue);
+
+
 }
+
+
+/*--------------------------------------STYLES FOR POP-UP FORM MODAL------------------------------------------*/
+ * {
+        box-sizing: border-box;
+      }
+      .openBtn {
+        display: flex;
+        justify-content: center;     
+      }
+      .openButton {
+			  color: var(--blue);
+				text-align: center;
+				background-color: var(--white);
+				border: solid 2px var(--blue);				
+				padding: 10px 20px;
+				margin-top: 30px;				
+				border-radius: 30px;				
+				transition: 0.2s ease-in-out;				
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+      }
+      .openButton:hover {
+			  color: var(--white);
+				text-align: center;
+				background-color: var(--blue);
+				border: solid var(--blue);				
+				padding: 10px 20px;
+				margin-top: 30px;				
+				border-radius: 30px;				
+				transition: 0.2s ease-in-out;				
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .loginPopup {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        transition: 0.5s ease-in;
+      }
+      .formPopup {
+      	color: var(--blue);
+        display: none;
+        position: fixed;
+        left: 48%;
+        top: 26%;
+        transform: translate(-50%, 5%);
+        border: 3px solid var(--blue);
+        z-index: 9;
+        transition: 0.5s ease-in;
+        border-radius: 10px;	
+      }
+      .formContainer {
+        max-width: 300px;
+        padding: 20px;
+        background-color: var(--tan);
+        border-radius: 10px;
+      }
+      .formContainer input[type=text],
+      .formContainer input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 20px 0;
+        border: none;
+        border-radius: 100px;
+        background: var(--white);
+      }
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=password]:focus {
+        background-color: var(--white);
+        outline: none;
+      }
+      .formContainer .btn {
+        padding: 12px 20px;
+        border: none;
+        background-color: var(--blue);
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+        opacity: 0.5;
+        border-radius: 100px;
+      }
+   
+
+      .formContainer .cancel {
+        background-color: #cc0000;
+      }
+      .formContainer .btn:hover,
+      .openButton:hover {
+        opacity: 1;
+        transition: 0.2 ease-in-out;
+      }
+
+/*---------------------------- End STYLES FOR POP-UP MODAL-------------------------------------- */
 
 /*----------------Order section--------------------*/
  footer{

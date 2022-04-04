@@ -69,6 +69,16 @@ html {
   margin-left: -15px;
 }
 
+.nav-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -2048,3 +2058,24 @@ html {
   }
 }
 /*# sourceMappingURL=bootstrap-grid.css.map */
+
+
+@media screen and (max-width: 400px){
+
+  .col-sm{
+    width: 15%;
+    padding: 0px;
+    margin-left: 10px;
+  }
+
+  .col-auto{
+    flex-wrap: nowrap;
+    padding: 7px 0px 0px 40px;
+    margin-left: 0;
+  }
+
+  .nav-row{
+    flex-wrap: nowrap;
+  }
+}
+

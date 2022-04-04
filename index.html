@@ -26,12 +26,13 @@
         <main>
             <!-- nav bar -->
           <nav>
-            <ul class="row">
+            <ul class="nav-row" >
               <li class="col-sm" style="padding-top: 0;"><a href="#home"><img src="img/shirt-logo.png" title="seamless trading company logo"></a></li>
-              <!-- <li class="col-sm"><a href="#home" title="Home Button">Seamless Trading Company</a></li> -->
-              <li class="col-sm"><a href="#products" title="internal link to products">Products</a></li>
-              <li class="col-sm"><a href="#order" title="link to internal order form">Order</a></li>
-              <li class="col-sm"><a href="#about"title="internal link to about section">About</a></li>              
+              <div class="row" style="padding-right: 50px;">
+                <li class="col-auto"><a href="#products" title="internal link to products">Products</a></li>
+                <li class="col-auto"><a href="#order" title="link to internal order form">Order</a></li>
+                <li class="col-auto"><a href="#about"title="internal link to about section">About</a></li> 
+              </div>             
               <!-- <li class="empty"></li> -->     
              
             </ul>
@@ -67,10 +68,10 @@
             <h2 style="margin-bottom: 100px;">Products</h2>
             <div class="row">
           <!-- Standard Tee -->
-            <div class="standard-tee col-sm">
+            <div class="standard-tee col">
               <img class="" src="img/standard-tee-icon.png" >
             </div>
-            <div class="standard-tee-info col-sm">
+            <div class="standard-tee-info col">
               <h3>
                 Standard Tee
               </h3>
@@ -107,10 +108,10 @@
             
             
           <!-- Custom Tee -->
-              <div class="col-sm" id="Custom-tee">
+              <div class="col" id="Custom-tee">
               <img src="img/custom-tee-icon.png" href="#"><br>            
             </div>
-            <div class="col-sm">
+            <div class="col">
               <h3>
                 Custom Tee
               </h3>
@@ -157,18 +158,18 @@
             <div class="about-products" style="width: 100%;">
                 <ul class="about-products" style="display:inline; position:relative;">
                   <div class="row" >
-                  <li id="quantity-range" class="col-sm">
+                  <li id="quantity-range" class="col">
                     <img src="img/quantity-range-icon.png" title="quantity range logo">
                     <h3>Quantity Range</h3>
                     <p>Starting at 10,000<br> up to 200,000 pcs</p>
                   </li>
-                   <li id="pricing" class="col-sm">
+                   <li id="pricing" class="col">
                     <img src="img/pricing-icon.png" title="pricing logo">
                     <h3>Pricing</h3>
                     <p>As Low As $3.15/Shirt<br> (before shipping)<br><div class="openBtn" href=""><button class="openButton" onclick="openForm()">Request a Quote
             </button> </div></p>
                   </li>
-                   <li id="quality-production" class="col-sm">
+                   <li id="quality-production" class="col">
                     <img src="img/quality-production-icon.png" title="Quality production logo">
                     <h3>Ethical Production</h3>
                     <h4 class="list">
@@ -183,7 +184,7 @@
             </button> </a>
                     </h4>
                     </li>
-                    <li class="col-sm">
+                    <li class="col">
                       <img src="img/flexible-shipping-icon.png" title="flexible shipping logo">
                       <h3>Flexible Shipping</h3>
                       <div class="openBtn" href=""><button class="openButton" onclick="openForm()">Request a Quote
