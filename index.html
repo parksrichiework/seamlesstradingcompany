@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&family=Prata&display=swap" rel="stylesheet"> 
-       
+        <script type="text/javascript" src="js/main.js"></script>
         
         
        
@@ -62,7 +62,7 @@
           </header>
         </div>
 
-<!-- Products section start -->
+    <!-- Products section start -->
           <section class="products-section" id="products">
             <h2 style="margin-bottom: 100px;">Products</h2>
             <div class="row">
@@ -165,8 +165,8 @@
                    <li id="pricing" class="col-sm">
                     <img src="img/pricing-icon.png" title="pricing logo">
                     <h3>Pricing</h3>
-                    <p>As Low As $3.15/Shirt<br> (before shipping)<br><a href="#quote"><button class="request-quote-button">Request a Quote
-            </button> </a></p>
+                    <p>As Low As $3.15/Shirt<br> (before shipping)<br><div class="openBtn" href=""><button class="openButton" onclick="openForm()">Request a Quote
+            </button> </div></p>
                   </li>
                    <li id="quality-production" class="col-sm">
                     <img src="img/quality-production-icon.png" title="Quality production logo">
@@ -179,20 +179,70 @@
                       <li>
                         Oeko-Tex Certified
                       </li>
-                      <a href="#"><button class="request-quote-button">Learn More
+                      <a href="file:///C:/Users/parkrichie/Documents/GitHub/seamlesstradingcompany/ethical-production.html"><button class="request-quote-button">Learn More
             </button> </a>
                     </h4>
                     </li>
                     <li class="col-sm">
                       <img src="img/flexible-shipping-icon.png" title="flexible shipping logo">
                       <h3>Flexible Shipping</h3>
-                      <a href="#"><button class="request-quote-button">Request a Quote
-            </button> </a>
+                      <div class="openBtn" href=""><button class="openButton" onclick="openForm()">Request a Quote
+            </button> </div>
                     </li>
                 </ul>
               </div>
             </div>            
           </div>
+
+          <!-- MODAL POP UP FORM -->
+           
+              <div class="loginPopup">
+                <div class="formPopup" id="popupForm">
+                  <form action="/action_page.php" class="formContainer">
+                    <h2>Request Quote</h2>
+                    <label for="email">
+                      <label for="name">
+                      
+                    </label>
+                    <input type="text" id="name" placeholder="Your Name" name="name">
+                    <label for="companyname">
+                      
+                    </label>
+                    <input type="text" id="company-name" placeholder="Company Name" name="name" required>
+                      
+                    </label>
+                    <input type="text" id="email" placeholder="Your Email" name="email" required>
+                    
+                    <button type="submit" class="btn submit-info">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="pricingPopup">
+                <div class="formPopup" id="popupForm">
+                  <form action="/action_page.php" class="formContainer">
+                    <h2>Request Quote</h2>
+                    <label for="email">
+                      <label for="name">
+                      
+                    </label>
+                    <input type="text" id="name" placeholder="Your Name" name="name">
+                    <label for="companyname">
+                      
+                    </label>
+                    <input type="text" id="company-name" placeholder="Company Name" name="name" required>
+                      
+                    </label>
+                    <input type="text" id="email" placeholder="Your Email" name="email" required>
+                    
+                    <button type="submit" class="btn submit-info">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+              </div>
+
+          <!-- MODAL POP UP FORM END -->
 
           <!-- --------------About Section Starts------------- -->
           <section class="about-section" id="about">
@@ -211,7 +261,7 @@
           </section>
         </main>
  
-        <script type="text/javascript" src="js/main.js"></script>
+        
   </body>
 
  
