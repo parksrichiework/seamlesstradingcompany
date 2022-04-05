@@ -355,8 +355,9 @@ nav{
  	padding-top: ;
  	padding-bottom: 0;
  	width: 60px;
- 	font-weight: 25px;
+ 	font-weight: 16px;
  	margin-left: 50px;
+ 	font-size: 15px;
  }
 
  .col-sm .main-logo{
@@ -376,7 +377,7 @@ header{
 	position: 50px;
 	border-radius: 15px;
 	/*margin-left: 25px;*/
-	padding-top: 217px;
+	padding-top: 120px;
 
 	
 }
@@ -413,7 +414,7 @@ header div h3{
 
 
 .header-welcome{
-	transform: translateY(12px);
+	transform: translateY(-5px);
 	position: inherit;
 	color: #EFEACD;
 	margin-left: 10%;
@@ -513,6 +514,10 @@ header div h3{
 	margin: 0px;
 }
 
+.standard-tee-info{
+	align-content: center;
+}
+
 .about-products ul li{
 	list-style: none;
 	color: var(--blue);
@@ -525,7 +530,7 @@ header div h3{
 .product-divider{
 	color: var(--blue);
 	border: solid 1px;
-	margin: 50px 0px;
+	margin: 0px 0px 50px;
 }
 
 /*<----------about section------------>*/
@@ -545,8 +550,8 @@ header div h3{
 .about-divider{
 	color: var(--blue);
 	border: solid 0.25px;
-	width: 50%;
-	margin-left: 290px;
+	width: 70%;
+	margin-left: 55px;
 	text-align: center;
 }
 
@@ -570,14 +575,12 @@ header div h3{
 	text-align: center;
 	background-color: var(--white);
 	border: solid var(--blue);
-	/*position: absolute;*/
 	padding: 10px 20px;
-	margin-top: 30px;
-	/*margin-left: 50%;*/
+	margin: 7px 0px 60px 0px;
 	border-radius: 30px;
-	/*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
 	transition: 0.2s ease-in-out;
-	/*z-index: 10;*/
+	border: solid 2px;
+	
 }
 
 .request-quote-button:hover {
@@ -585,6 +588,7 @@ header div h3{
 	/*position: absolute;*/
 	cursor: pointer;
 	background-color: var(--blue);
+
 
 
 }
@@ -604,12 +608,13 @@ header div h3{
 				background-color: var(--white);
 				border: solid 2px var(--blue);				
 				padding: 10px 20px;
-				margin-top: 30px;				
+				margin: 7px 0px 60px;				
 				border-radius: 30px;				
 				transition: 0.2s ease-in-out;				
         position: relative;
         cursor: pointer;
         text-align: center;
+        
       }
       .openButton:hover {
 			  color: var(--white);
