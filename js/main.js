@@ -35,7 +35,7 @@
         document.getElementById("popupForm").style.display = "none";
       }
 
-var nameInput = document.getElementById('formContainer').value;
+var nameInput = document.querySelector('#name').value;
 
 console.log(nameInput)
 ;
@@ -47,3 +47,5 @@ function submitInfo(){
 
 
       //MODAL FOR POP UP FORM END
+
+
