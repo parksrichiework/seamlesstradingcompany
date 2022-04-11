@@ -39,8 +39,8 @@
       //MODAL FOR POP UP FORM END
 
 
-const nameInput = document.querySelector('#popupForm').value;
-const submitInfo= document.querySelector('submit-info');
+const nameInput = document.querySelectorAll('#popupForm input').value;
+const submitInfo= document.querySelectorAll('btn submit-info');
 
 
 ;
