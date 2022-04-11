@@ -35,7 +35,11 @@
         document.getElementById("popupForm").style.display = "none";
       }
 
-var nameInput = document.querySelector('#name').value;
+
+      //MODAL FOR POP UP FORM END
+
+
+var nameInput = document.querySelector('#popupForm').value;
 
 console.log(nameInput)
 ;
@@ -43,9 +47,3 @@ console.log(nameInput)
 function submitInfo(){
     document.querySelectorAll('submit-info')
 }
-
-
-
-      //MODAL FOR POP UP FORM END
-
-
