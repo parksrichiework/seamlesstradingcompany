@@ -39,11 +39,12 @@
       //MODAL FOR POP UP FORM END
 
 
-var nameInput = document.querySelector('#popupForm').value;
+const nameInput = document.querySelector('#popupForm').value;
+const submitInfo= document.querySelector('submit-info');
 
-console.log(nameInput)
+
 ;
 
-function submitInfo(){
-    document.querySelectorAll('submit-info')
-}
+submitInfo.addEventListener('click', function(){
+  console.log(nameInput)
+})
