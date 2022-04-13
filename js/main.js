@@ -49,6 +49,20 @@ function log(){
   }
 
 
+document.querySelector('#submitBtnShipping').addEventListener('click', log)
+
+function log(){
+  const name= document.querySelector('#nameShipping').value
+  const company= document.querySelector('#company-nameShipping').value
+  const email= document.querySelector('#emailShipping').value
+
+  console.log("Shipping quote requested by: " + name + ", " + company + ", " + email)
+  alert("Your Shipping Quote information has been submitted!")
+
+  return document.querySelector('#shippingRequest').innerHTML= "<p>Submit Another?</p>"
+  }
+
+
 
 
   // const synth = window.speechSynthesis;
