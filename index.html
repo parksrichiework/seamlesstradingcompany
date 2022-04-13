@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&family=Prata&display=swap" rel="stylesheet"> 
-        <script type="text/javascript" src="js/main.js"></script>
+        
         
         
        
@@ -166,29 +166,44 @@
                    <li id="pricing" class="col">
                     <img src="img/pricing-icon.png" title="pricing logo" alt="image of pricing icon">
                     <h3>Pricing</h3>
-                    <p>As Low As $3.15/Shirt<br> (before shipping)<br><div class="openBtn" href=""><button class="openButton" onclick="openForm()">Request a Quote
-            </button> </div></p>
+                      <p>
+                      As Low As $3.15/Shirt<br> (before shipping)<br>
+                      </p>
+                      <div class="openBtn">
+                        <button type= "button" class="openButton" id="pricingRequest">
+                        Request a Quote
+                        </button> 
+                      </div>
+
                   </li>
                    <li id="quality-production" class="col">
                     <img src="img/quality-production-icon.png" title="Ethical production logo" alt="image of ethical production icon">
                     <h3>Ethical Production</h3>
-                    <h4 class="list">
-                      <li style=>BCI Compliant</li>
-                      <li>
-                        GOTS Certified
-                      </li>
-                      <li>
-                        Oeko-Tex Certified
-                      </li>
-                      <a href="https://seamlesstradingcompany-ethical-production.netlify.app/" target="_blank"><button class="request-quote-button">Learn More
-            </button> </a>
-                    </h4>
+                      <h4 class="list">
+                        <li style=>
+                        BCI Compliant
+                        </li>
+                        <li>
+                          GOTS Certified
+                        </li>
+                        <li>
+                          Oeko-Tex Certified
+                        </li>
+                        <a href="https://seamlesstradingcompany-ethical-production.netlify.app/" target="_blank">
+                          <button class="request-quote-button">
+                            Learn More
+                          </button> 
+                        </a>
+                      </h4>
                     </li>
                     <li class="col">
-                      <img src="img/flexible-shipping-icon.png" title="flexible shipping logo" alt="image of flexible shipping icon">
+                    <img src="img/flexible-shipping-icon.png" title="flexible shipping logo" alt="image of flexible shipping icon">
                       <h3>Flexible Shipping</h3>
-                      <div class="openBtn" href=""><button class="openButton" onclick="openForm()">Request a Quote
-            </button> </div>
+                        <div class="openBtn">
+                          <button type="button" class="openButton" id="shippingRequest">
+                            Request a Quote
+                          </button> 
+                        </div>
                     </li>
                 </ul>
               </div>
@@ -198,9 +213,32 @@
           <!-- MODAL POP UP FORM -->
            
               <div class="loginPopup">
-                <div class="formPopup" id="popupForm">
+                <div class="formPopup" id="popupFormPricing">
                   <form  class="formContainer">
-                    <h2>Request Quote</h2>
+                    <h2>Request Pricing Quote</h2>
+                    <label for="email">
+                      <label for="name">
+                      
+                    </label>
+                    <input type="text" id="namePricing" placeholder="Your Name" name="name">
+                    <label for="companyname">
+                      
+                    </label>
+                    <input type="text" id="company-namePricing" placeholder="Company Name" name="company name" required>
+                      
+                    </label>
+                    <input type="text" id="emailPricing" placeholder="Your Email" name="email" required>
+                    
+                    <button type="submit" class="btn submit-info" id="submitBtnPricing">Submit</button>
+                    <button type="button" class="btn cancel" id="closeBtn" >Close</button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="loginPopup">
+                <div class="formPopup" id="popupFormShipping">
+                  <form  class="formContainer">
+                    <h2>Request Shipping Quote</h2>
                     <label for="email">
                       <label for="name">
                       
@@ -214,33 +252,13 @@
                     </label>
                     <input type="text" id="email" placeholder="Your Email" name="email" required>
                     
-                    <button type="submit" class="btn submit-info">Submit</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    <button type="submit" class="btn submit-info" id="submitBtnShipping">Submit</button>
+                    <button type="button" class="btn cancel" id="closeBtnShipping" >Close</button>
                   </form>
                 </div>
               </div>
 
-              <div class="pricingPopup">
-                <div class="formPopup" id="popupForm">
-                  <form  class="formContainer">
-                    <h2>Request Quote</h2>
-                    
-                      <label for="name">
-                      
-                    </label>
-                    <input type="text" id="name" placeholder="Your Name" name="name">
-                    <label for="companyname">
-                      
-                    </label>
-                    <input type="text" id="company-name" placeholder="Company Name" name="name" required>
-                    <label for="email">  
-                    </label>
-                    <input type="text" id="email" placeholder="Your Email" name="email" required>
-                    
-                    <button type="submit" class="btn submit-info">Submit</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                  </form>
-                </div>
+             
               </div>
 
           <!-- MODAL POP UP FORM END -->
@@ -262,7 +280,7 @@
           </section>
         </main>
  
-        
+       <script type="text/javascript" src="js/main.js"></script> 
   </body>
 
  

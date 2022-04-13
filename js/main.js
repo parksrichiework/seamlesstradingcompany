@@ -1,50 +1,80 @@
-     
+// *************************************modal for pop-up form**********************************************
+
+
+document.querySelector('#pricingRequest').addEventListener('click', openPricing)
+document.querySelector('#shippingRequest').addEventListener('click', openShipping)
+
+
+function openPricing(){
+
+  const form= document.querySelector('#popupFormPricing')
+      
+  form.style.display= "block"
+}
+
+function openShipping(){
+  const form= document.querySelector('#popupFormShipping')
+  form.style.display= "block"
+}
+
+
+document.querySelector('#closeBtn').addEventListener('click', close)
+document.querySelector('#closeBtnShipping').addEventListener('click', closeShipping)
+
+
+function close(){
+  const formPricing= document.querySelector('#popupFormPricing')
+  formPricing.style.display= "none"
   
+}
 
-//   function multiplyThree(q,w,e){
-//     return q * w * e
-//   }
+function closeShipping(){
+  const form= document.querySelector('#popupFormShipping')
+  form.style.display= "none"
+}
 
-// console.log(multiplyThree(3*2*2))
+    
 
- 
-// h1Holder.addEventListener('click', sum);
-//     function sum(){
-//         console.log(num + Number(inputedVal))
-//     };
+document.querySelector('#submitBtnPricing').addEventListener('click', log)
 
+function log(){
+  const name= document.querySelector('#namePricing').value
+  const company= document.querySelector('#company-namePricing').value
+  const email= document.querySelector('#emailPricing').value
 
-// inputHolder.addEventListener('click', log)
+  console.log("Pricing quote requested by: " + name + ", " + company + ", " + email)
+  alert("Your Pricing Quote information has been submitted!")
 
-//     function log(){
-//         console.log()
-//     }
-
-
-// var formInputs= document.querySelector('.input')
-
-// console.log(formInputs)
-
-// modal for pop-up form
+  return document.querySelector('#pricingRequest').innerHTML= "<p>Submit Another?</p>"
+  }
 
 
-  function openForm() {
-        document.getElementById("popupForm").style.display = "block";
-      }
-      function closeForm() {
-        document.getElementById("popupForm").style.display = "none";
-      }
 
 
-      //MODAL FOR POP UP FORM END
+  // const synth = window.speechSynthesis;
+
+  // let yellThis = new SpeechSynthesisUtterance(yellText);
 
 
-const nameInput = document.querySelectorAll('#popupForm input').value;
-const submitInfo= document.querySelectorAll('btn submit-info');
 
 
-;
 
-submitInfo.addEventListener('click', function(){
-  console.log(nameInput)
-})
+
+
+
+
+
+
+
+
+
+
+
+
+//*************************************MODAL FOR POP UP FORM END********************************************
+
+
+
+
+
+
