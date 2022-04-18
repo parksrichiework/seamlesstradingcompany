@@ -567,11 +567,11 @@ header div h3{
 
 /*<----------products------------>*/
 
-.products-section{
+.products-section {
 	margin-top: 100px;
 	color: var(--blue);
-	margin-left: 46px;
-
+	/*margin-left: 46px;*/	
+	text-align: center;
 }
 .products-section h2{
 	text-align: center;
@@ -637,6 +637,11 @@ header div h3{
 	margin: 0px 0px 50px;
 }
 
+.product-spec-list{
+	text-align: left;
+	padding-left: 100px;
+}
+
 /*<----------about section------------>*/
 
 
@@ -692,6 +697,7 @@ header div h3{
 	/*position: absolute;*/
 	cursor: pointer;
 	background-color: var(--blue);
+	border: solid var(--blue);
 
 
 
