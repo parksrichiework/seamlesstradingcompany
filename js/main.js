@@ -57,7 +57,7 @@
     console.log(`Pricing request from ${name}, ${company}, ${email}`)
     alert("Your Pricing Quote information has been submitted!")
 
-    return document.querySelector('#pricingRequest').innerHTML= "<p>Submit Another?</p>"
+    return document.querySelector('#pricingRequest').innerHTML= "<p>Submit Another Pricing Quote?</p>"
     }
 
 
@@ -71,7 +71,7 @@
     console.log(`Shipping request from ${name}, ${company}, ${email}`)
     alert("Your Shipping Quote information has been submitted!")
 
-    return document.querySelector('#shippingRequest').innerHTML= "<p>Submit Another?</p>"
+    return document.querySelector('#shippingRequest').innerHTML= "<p>Submit Another Shipping Quote?</p>"
     }
 
       document.querySelector('#submitBtnSample').addEventListener('click', logSample)
@@ -84,7 +84,7 @@
     console.log(`Sample request from ${name}, ${company}, ${email}`)
     alert("Your Sample request information has been submitted!")
 
-    return document.querySelector('#sampleRequest').innerHTML= "Submit Another?"
+    return document.querySelector('#sampleRequest').innerHTML= "Submit Another Sample Order?"
   }
 
 
