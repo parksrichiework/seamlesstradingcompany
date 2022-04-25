@@ -84,7 +84,7 @@
     console.log(`Sample request from ${name}, ${company}, ${email}`)
     alert("Your Sample request information has been submitted!")
 
-    return document.querySelector('#sampleRequest').innerHTML= "Submit Another Sample Order?"
+    return document.querySelector('#sampleRequest').innerHTML= "Submit Another Sample Request?"
   }
 
 
