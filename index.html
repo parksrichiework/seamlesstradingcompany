@@ -104,8 +104,8 @@
                     XS-XXXL
                   </li>
                 </ul>
-                <a href="#quote"><button class="request-quote-button" title="Click to request a standard tee sample">Request a Sample
-            </button> </a>
+                <a><button class="request-quote-button" id='sampleRequest' title="Click to request a standard tee sample">Request a Sample
+            </button></a>
               </div>
             
             
@@ -155,7 +155,7 @@
           </div>
         </div>
             </section>
-      <!-- Products - Divider -->
+      <!-- **************Products - Divider******************** -->
             <div class="product-divider"></div>
       <!-- Products- About -->
             <div class="about-products" style="width: 100%;">
@@ -177,9 +177,8 @@
                         Request a Quote
                         </button> 
                       </div>
-
                   </li>
-                   <li id="quality-production" class="col">
+                  <li id="quality-production" class="col">
                     <img src="img/quality-production-icon.png" title="Ethical production logo" alt="image of ethical production icon">
                     <h3>Ethical Production</h3>
                       <h4 class="list">
@@ -198,8 +197,8 @@
                           </button> 
                         </a>
                       </h4>
-                    </li>
-                    <li class="col">
+                  </li>
+                  <li class="col">
                     <img src="img/flexible-shipping-icon.png" title="flexible shipping logo" alt="image of flexible shipping icon">
                       <h3>Flexible Shipping</h3>
                         <div class="openBtn">
@@ -207,14 +206,14 @@
                             Request a Quote
                           </button> 
                         </div>
-                    </li>
+                  </li>
                 </ul>
               </div>
             </div>            
           </div>
 
-          <!-- MODAL POP UP FORM -->
-           
+          <!-- ***************************POP UP FORMS********************************** -->
+            <!-- PRICING REQUEST FORM -->
               <div class="loginPopup">
                 <div class="formPopup" id="popupFormPricing">
                   <form  class="formContainer">
@@ -237,7 +236,7 @@
                   </form>
                 </div>
               </div>
-
+            <!-- SHIPPING REQUEST FORM -->
               <div class="loginPopup">
                 <div class="formPopup" id="popupFormShipping">
                   <form  class="formContainer">
@@ -260,11 +259,34 @@
                   </form>
                 </div>
               </div>
-
-             
+              <!-- *******************REQUEST SAMPLE FORM******************** -->
+              <div class="loginPopup">
+                <div class="formPopup" id="popupFormSample">
+                  <form  class="formContainer">
+                    <h2>Request A Standard Tee Sample</h2>
+                    <label for="email">
+                      <label for="name">
+                      
+                    </label>
+                    <input type="text" id="nameSample" placeholder="Your Name" name="name">
+                    <label for="companyname">
+                      
+                    </label>
+                    <input type="text" id="companySample" placeholder="Company Name" name="company name" required>
+                      
+                    </label>
+                    <input type="text" id="emailSample" placeholder="Your Email" name="email" required>
+                    
+                    <button type="submit" class="btn submit-info" id="submitBtnSample">Submit</button>
+                    <button type="button" class="btn cancel" id="closeBtnSample" >Close</button>
+                  </form>
+                </div>
               </div>
 
-          <!-- MODAL POP UP FORM END -->
+             <!-- THIS IS THE END DIV FOR THE ENTIRE PRODUCT SECTION (ADD ANY CODE BOVE THIS LINE) -->
+              </div>
+
+          <!-- *****************************MODAL POP UP FORM END************************************* -->
 
           <!-- --------------About Section Starts------------- -->
           <section class="about-section" id="about">
