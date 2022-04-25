@@ -784,13 +784,15 @@ header div h3{
         border: 3px solid var(--blue);
         z-index: 9;
         transition: 0.5s ease-in;
-        border-radius: 10px;	
+        border-radius: 5px;
+        width: 75%;	
+
       }
       .formContainer {
         max-width: 300px;
         padding: 20px;
         background-color: var(--tan);
-        border-radius: 10px;
+        border-radius: 5px;
       }
       .formContainer input[type=text],
       .formContainer input[type=password] {
