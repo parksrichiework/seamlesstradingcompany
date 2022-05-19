@@ -790,6 +790,7 @@ header div h3{
         transition: 0.5s ease-in;
         border-radius: 5px;
         width: 70%;	
+		margin-top: -175px;
 
       }
       .formContainer {
