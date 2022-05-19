@@ -332,16 +332,19 @@ header div h3{
         border: 3px solid var(--blue);
         z-index: 9;
         transition: 0.5s ease-in;
-        border-radius: 10px;	
+        border-radius: 10px;
+		/* margin-top: -175px	 */
       }
       .formContainer {
         max-width: 300px;
         padding: 20px;
         background-color: var(--tan);
         border-radius: 10px;
+		
       }
       .formContainer input[type=text],
-      .formContainer input[type=password] {
+      .formContainer input[type=password],
+	  .formContainer input[type=email] {
         width: 100%;
         padding: 15px;
         margin: 5px 0 20px 0;
@@ -350,7 +353,8 @@ header div h3{
         background: var(--white);
       }
       .formContainer input[type=text]:focus,
-      .formContainer input[type=password]:focus {
+      .formContainer input[type=password]:focus, 
+	  .formContainer input[type=email]:focus {
         background-color: var(--white);
         outline: none;
       }
@@ -472,7 +476,7 @@ nav{
  	
  }
  nav ul li{
- 	padding-top: ;
+ 	/* padding-top: ; */
  	padding-bottom: 0;
  	width: 60px;
  	font-weight: 16px;
@@ -795,7 +799,8 @@ header div h3{
         border-radius: 5px;
       }
       .formContainer input[type=text],
-      .formContainer input[type=password] {
+      .formContainer input[type=password],
+	  .formContainer input[type=email] {
         width: 100%;
         padding: 15px;
         margin: 5px 0 20px 0;
@@ -804,7 +809,8 @@ header div h3{
         background: var(--white);
       }
       .formContainer input[type=text]:focus,
-      .formContainer input[type=password]:focus {
+      .formContainer input[type=password]:focus,
+	  .formContainer input[type=email]:focus {
         background-color: var(--white);
         outline: none;
       }

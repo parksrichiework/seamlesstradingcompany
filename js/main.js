@@ -31,61 +31,133 @@
 
   function close(){
     const formPricing= document.querySelector('#popupFormPricing')
-    formPricing.style.display= "none"
-    
+    formPricing.style.display= "none"    
   }
-
   function closeShipping(){
     const form= document.querySelector('#popupFormShipping')
     form.style.display= "none"
   }
-
   function closeSample(){
     const form= document.querySelector('#popupFormSample')
     form.style.display= "none"
   }
 
-    
-// LOGGING THE INFORMATION FROM THE PRICING AND SHIPPING REQUEST BUTTONS
-  document.querySelector('#submitBtnPricing').addEventListener('click', logPricing)
+//Putting Data into object and saving it to localStorage    
+//----------------------------------------------------PRICING QUOTE!!!!
+  let dataPricing =[]
 
-  function logPricing(){
-    const name= document.querySelector('#namePricing').value
-    const company= document.querySelector('#company-namePricing').value
-    const email= document.querySelector('#emailPricing').value
+  const addPricing = (ev)=>{
+  ev.preventDefault() //to stop form from submitting
+  
+  let pricing= {
+    id:Date.now(),
+    service: 'Pricing Request',
+    name: document.querySelector('#namePricing').value,
+    company: document.querySelector('#companyPricing').value,
+    address: document.querySelector('#addressPricing').value,
+    city: document.querySelector('#cityPricing').value,
+    zip: document.querySelector('#zipPricing').value,
+    phone: document.querySelector('#phonePricing').value,
+    email: document.querySelector('#emailPricing').value
+  } 
+  
+  dataPricing.push(pricing)
+  document.forms[0].reset() //to clear the form for the next entries
+  // document.querySelector('form').reset()
+  
 
-    console.log(`Pricing request from ${name}, ${company}, ${email}`)
-    alert("Your Pricing Quote information has been submitted!")
+  //for display purposes
+  console.warn('added', {dataPricing})
+  // let pre = document.querySelector('#msg pre')
+  // pre.textContent = '\n' + JSON.stringify(dataForm, '\t', 2)
 
-    return document.querySelector('#pricingRequest').innerHTML= "<p>Submit Another Pricing Quote?</p>"
-    }
-
-
-  document.querySelector('#submitBtnShipping').addEventListener('click', logShipping)
-
-  function logShipping(){
-    const name= document.querySelector('#nameShipping').value
-    const company= document.querySelector('#company-nameShipping').value
-    const email= document.querySelector('#emailShipping').value
-
-    console.log(`Shipping request from ${name}, ${company}, ${email}`)
-    alert("Your Shipping Quote information has been submitted!")
-
-    return document.querySelector('#shippingRequest').innerHTML= "<p>Submit Another Shipping Quote?</p>"
-    }
-
-      document.querySelector('#submitBtnSample').addEventListener('click', logSample)
-
-  function logSample(){
-    const name= document.querySelector('#nameSample').value
-    const company= document.querySelector('#companySample').value
-    const email= document.querySelector('#emailSample').value
-
-    console.log(`Sample request from ${name}, ${company}, ${email}`)
-    alert("Your Sample request information has been submitted!")
-
-    return document.querySelector('#sampleRequest').innerHTML= "Submit Another Sample Request?"
+  //saving to localStorage
+  localStorage.setItem('PricingRequest', JSON.stringify(dataPricing))
   }
+
+  document.addEventListener('DOMContentLoaded', ()=>{
+    document.querySelector('#submitBtnPricing').addEventListener('click', addPricing)
+
+  })
+
+  //--------------------------------------------------------shipping quote
+
+  let dataShipping =[]
+
+  const addShipping = (ev)=>{
+  ev.preventDefault() //to stop form from submitting
+  
+   
+  const shipping = {
+      id:Date.now(),
+      service: 'Shipping Request',
+      name: document.querySelector('#nameShipping').value,
+      company: document.querySelector('#companyShipping').value,
+      address: document.querySelector('#addressShipping').value,
+      city: document.querySelector('#cityShipping').value,
+      zip: document.querySelector('#zipShipping').value,
+      phone: document.querySelector('#phoneShipping').value,
+      email: document.querySelector('#emailShipping').value
+    } 
+
+  dataShipping.push(shipping)
+  document.forms[0].reset() //to clear the form for the next entries
+  // document.querySelector('form').reset()
+  
+
+  //for display purposes
+  console.warn('added', {dataShipping})
+  // let pre = document.querySelector('#msg pre')
+  // pre.textContent = '\n' + JSON.stringify(dataForm, '\t', 2)
+
+  //saving to localStorage
+  localStorage.setItem('ShippingRequest', JSON.stringify(dataShipping))
+  }
+
+  document.addEventListener('DOMContentLoaded', ()=>{
+    document.querySelector('#submitBtnShipping').addEventListener('click', addShipping)
+
+  })  
+
+  //-------------------------------SAMPLE REQUEST!!!!!!!!!!!!!!!!!!!!!!!!!11
+  let dataSample =[]
+
+  const addSample = (ev)=>{
+  ev.preventDefault() //to stop form from submitting
+     
+  let sample = {
+    id:Date.now(),
+    service: 'Sample Request',
+    name: document.querySelector('#nameSample').value,
+    company: document.querySelector('#companySample').value,
+    address: document.querySelector('#addressSample').value,
+    city: document.querySelector('#citySample').value,
+    zip: document.querySelector('#zipSample').value,
+    phone: document.querySelector('#phoneSample').value,
+    email: document.querySelector('#emailSample').value
+  } 
+
+  dataSample.push(sample)
+  document.forms[0].reset() //to clear the form for the next entries
+  // document.querySelector('form').reset()
+  
+
+  //for display purposes
+  console.warn('added', {dataSample})
+  // let pre = document.querySelector('#msg pre')
+  // pre.textContent = '\n' + JSON.stringify(dataForm, '\t', 2)
+
+  //saving to localStorage
+  localStorage.setItem('SampleRequest', JSON.stringify(dataSample))
+  }
+
+  document.addEventListener('DOMContentLoaded', ()=>{
+    document.querySelector('#submitBtnSample').addEventListener('click', addSample)
+
+  })
+  
+
+
 
 
 
