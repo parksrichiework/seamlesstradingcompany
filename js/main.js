@@ -69,6 +69,7 @@
 
   //for display purposes
   console.warn('added', {dataPricing})
+  alert('Your Pricing Quote Request has been sumbitted!')
   // let pre = document.querySelector('#msg pre')
   // pre.textContent = '\n' + JSON.stringify(dataForm, '\t', 2)
 
@@ -108,6 +109,7 @@
 
   //for display purposes
   console.warn('added', {dataShipping})
+  alert('Your Shipping Quote Request has been sumbitted!')
   // let pre = document.querySelector('#msg pre')
   // pre.textContent = '\n' + JSON.stringify(dataForm, '\t', 2)
 
