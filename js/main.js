@@ -65,7 +65,7 @@
   document.forms[0].reset() //to clear the form for the next entries
   // document.querySelector('form').reset()
   
-  document.querySelector(#submitBtnPricing).toggle('.btn')
+  
 
   //for display purposes
   console.warn('added', {dataPricing})
