@@ -65,6 +65,7 @@
   document.forms[0].reset() //to clear the form for the next entries
   // document.querySelector('form').reset()
   
+  document.querySelector(#submitBtnPricing).toggle('.btn')
 
   //for display purposes
   console.warn('added', {dataPricing})
@@ -126,7 +127,7 @@
   ev.preventDefault() //to stop form from submitting
      
   let sample = {
-    id:Date.now(),
+    id: Date.now(),
     service: 'Sample Request',
     name: document.querySelector('#nameSample').value,
     company: document.querySelector('#companySample').value,
@@ -143,9 +144,12 @@
   
 
   //for display purposes
+  //print a notification to console
   console.warn('added', {dataSample})
+  alert('Your Sample Request has been sumbitted!')
+  //print notification to the DOM
   // let pre = document.querySelector('#msg pre')
-  // pre.textContent = '\n' + JSON.stringify(dataForm, '\t', 2)
+  // pre.textContent = '\n' + JSON.stringify(dataSample, '\t', 2)
 
   //saving to localStorage
   localStorage.setItem('SampleRequest', JSON.stringify(dataSample))
@@ -155,6 +159,23 @@
     document.querySelector('#submitBtnSample').addEventListener('click', addSample)
 
   })
+
+//fetch command template
+//   document.querySelector('button').addEventListener('click', getFetch)
+
+// function getFetch(){
+//   const choice = document.querySelector('input').value
+//   const url = `https://www.dnd5eapi.co/api/spells/${choice}`
+
+//   fetch(url)
+//       .then(res => res.json()) // parse response as JSON
+//       .then(data => {
+//        console.log(data)
+//       })
+//       .catch(err => {
+//           console.log(`error ${err}`)
+//       });
+// }
   
 
 
