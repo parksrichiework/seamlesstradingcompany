@@ -369,6 +369,16 @@ header div h3{
         outline: none;
 		
       }
+
+	 .formContainer input[type="date"]:before {
+		content: attr(placeholder) !important;
+		/* color: #aaa; */
+		margin-right: 0.5em;
+	  }
+	  /* .formContainer input[type="date"]:focus:before,
+	  .formContainer input[type="date"]:valid:before {
+		content: "";
+	  }  */
       .formContainer .btn {
         padding: 12px 20px;
         border: none;
@@ -840,6 +850,17 @@ header div h3{
         outline: none;
 		
       }
+
+	  .formContainer input[type="date"]:before {
+		content: attr(placeholder) !important;
+		/* color: #aaa; */
+		margin-right: 0.5em;
+	  }
+	  /* .formContainer input[type="date"]:focus:before,
+	  .formContainer input[type="date"]:valid:before {
+		content: "";
+	  }  */
+
       .formContainer .btn {
         padding: 12px 20px;
         border: none;
