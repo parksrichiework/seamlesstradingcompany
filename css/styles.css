@@ -56,13 +56,14 @@ header{
 	margin-top: -25px;
 	position: relative;
 	border-radius: 15px;
+	
 
 	
 }
 header img{
 	width: 100%;
 	z-index: 2;
-	margin-top: -150px;
+	margin-top: -190px;
 }
 
 header div h2{
@@ -92,7 +93,7 @@ header div h3{
 
 
 .header-welcome{
-	transform: translateY(315px);
+	transform: translateY(269px);
 	position: inherit;
 	color: #EFEACD;
 	margin-left: 71px;
@@ -250,7 +251,7 @@ header div h3{
 	border: solid 2px var(--blue);
 	/*position: absolute;*/
 	padding: 10px 20px;
-	margin-top: 30px;
+	/* margin-top: 30px; */
 	/*margin-left: 50%;*/
 	border-radius: 30px;
 	/*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
@@ -272,7 +273,7 @@ header div h3{
 	border: solid 2px var(--blue);
 	/*position: absolute;*/
 	padding: 10px 20px;
-	margin-top: 30px;
+	/* margin-top: 30px; */
 	/*margin-left: 50%;*/
 	border-radius: 30px;
 	/*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
@@ -295,7 +296,7 @@ header div h3{
 				background-color: var(--white);
 				border: solid 2px var(--blue);				
 				padding: 10px 20px;
-				margin-top: 30px;				
+				/* margin-top: 30px;				 */
 				border-radius: 30px;				
 				transition: 0.2s ease-in-out;				
         position: relative;
@@ -308,7 +309,7 @@ header div h3{
 				background-color: var(--blue);
 				border: solid var(--blue);				
 				padding: 10px 20px;
-				margin-top: 30px;				
+				/* margin-top: 30px;				 */
 				border-radius: 30px;				
 				transition: 0.2s ease-in-out;				
         position: relative;
@@ -327,7 +328,7 @@ header div h3{
       	color: var(--blue);
         display: none;
         position: fixed;
-        left: 45%;
+        left: 50%;
         top: 5%;
 		height: 600px;
         transform: translate(-50%, 10%);
@@ -752,12 +753,16 @@ header div h3{
 	border: solid 2px var(--white);
 	/*position: absolute;*/
 	padding: 10px 20px;
-	margin-top: 30px;
+	/* margin-top: 30px; */
 	/*margin-left: 50%;*/
 	border-radius: 30px;
 	/*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
 	transition: 0.2s ease-in-out;
 	/*z-index: 10;*/
+}
+
+.about-info{
+	padding: 0px 105px;
 }
 
 /*--------------------------------------STYLES FOR POP-UP FORM MODAL------------------------------------------*/
@@ -788,7 +793,7 @@ header div h3{
 				background-color: var(--blue);
 				border: solid var(--blue);				
 				padding: 10px 20px;
-				margin-top: 30px;				
+				/* margin-top: 30px;				 */
 				border-radius: 30px;				
 				transition: 0.2s ease-in-out;				
         position: relative;
