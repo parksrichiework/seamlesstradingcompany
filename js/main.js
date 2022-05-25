@@ -53,6 +53,22 @@ const formCustom= document.querySelector('#popupFormCustom')
 function closeCustom(){
   formCustom.style.display= "none"
 }
+
+let formArray = [formPricing, formShipping, formSample, formCustom]
+window.addEventListener('mouseup', function(e){  
+  
+  for(let i=0; i < formArray.length; i++){
+    if(e.target != formPricing ||
+      e.target != formShipping ||
+      e.target != formSample||
+      e.target != formCustom){
+    formArray[0].style.display= "none";
+    formArray[1].style.display= "none";
+    formArray[2].style.display= "none";
+    formArray[3].style.display= "none"
+    }
+  }
+})
   
 
 //Putting Data into object and saving it to localStorage    
