@@ -352,6 +352,7 @@ header div h3{
       .formContainer input[type=password],
 	  .formContainer input[type=email],
 	  .formContainer input[type=date],
+	  .formContainer input[type=number],
 	  .formContainer select {
         width: 100%;
         padding: 15px;
@@ -365,6 +366,7 @@ header div h3{
       .formContainer input[type=password]:focus, 
 	  .formContainer input[type=email]:focus
 	  .formContainer input[type=date]:focus,
+	  .formContainer input[type=number]:focus,
 	  .formContainer select:focus {
         background-color: var(--white);
         outline: none;
@@ -837,6 +839,7 @@ header div h3{
       .formContainer input[type=password],
 	  .formContainer input[type=email],
 	  .formContainer input[type=date],
+	  .formContainer input[type=number],
 	  .formContainer select {
         width: 100%;
         padding: 15px;
@@ -850,6 +853,7 @@ header div h3{
       .formContainer input[type=password]:focus, 
 	  .formContainer input[type=email]:focus
 	  .formContainer input[type=date]:focus,
+	  .formContainer input[type=number]:focus,
 	  .formContainer select:focus {
         background-color: var(--white);
         outline: none;
