@@ -4,6 +4,7 @@
   document.querySelector('#pricingRequest').addEventListener('click', openPricing)
   document.querySelector('#shippingRequest').addEventListener('click', openShipping)
   document.querySelector('#sampleRequest').addEventListener('click', openSample)
+  document.querySelector('#customRequest').addEventListener('click', openCustom)
 
 
   function openPricing(){
@@ -23,24 +24,36 @@
     form.style.display= 'block'
   }
 
+  function openCustom(){
+    const form= document.querySelector('#popupFormCustom')
+    form.style.display= 'block'
+  }
+
 // CLOSE PRICING AND SHIPPING REQUEST BUTTONS
-  document.querySelector('#closeBtn').addEventListener('click', close)
+const formPricing= document.querySelector('#popupFormPricing')
+const formShipping= document.querySelector('#popupFormShipping')
+const formSample= document.querySelector('#popupFormSample')
+const formCustom= document.querySelector('#popupFormCustom')
+
+  document.querySelector('#closeBtnPricing').addEventListener('click', closePricing)
   document.querySelector('#closeBtnShipping').addEventListener('click', closeShipping)
   document.querySelector('#closeBtnSample').addEventListener('click', closeSample)
+  document.querySelector('#closeBtnCustom').addEventListener('click', closeCustom)
 
 
-  function close(){
-    const formPricing= document.querySelector('#popupFormPricing')
+  function closePricing(){    
     formPricing.style.display= "none"    
   }
-  function closeShipping(){
-    const form= document.querySelector('#popupFormShipping')
-    form.style.display= "none"
+  function closeShipping(){    
+    formShipping.style.display= "none"
   }
-  function closeSample(){
-    const form= document.querySelector('#popupFormSample')
-    form.style.display= "none"
+  function closeSample(){    
+    formSample.style.display= "none"
   }
+function closeCustom(){
+  formCustom.style.display= "none"
+}
+  
 
 //Putting Data into object and saving it to localStorage    
 //----------------------------------------------------PRICING QUOTE!!!!

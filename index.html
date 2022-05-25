@@ -148,8 +148,11 @@
                     XS-XXXL
                   </li>
                 </ul>
-                <a href="#quote"><button class="request-quote-button" title="Click to request a custom tee order">Order Now
-            </button> </a>
+                <a href="#quote">
+                  <button class="request-quote-button" id="customRequest" title="Click to request a custom tee order">
+                    Order Now
+                  </button> 
+                </a>
               </p>
             </div>
           </div>
@@ -237,8 +240,8 @@
 
                     <input type="text" id="quantityPricing" placeholder="Quantity" name="Quantity">
 
-                    <select name="Size" id="sizePricing">
-                      <option value="">--Please choose a size option--</option>
+                    <select name="Size" id="sizePricing" style="padding-right: -30px">
+                      <option value="">--Choose a size option--</option>
                       <option value="XS">XS</option>
                       <option value="S">S</option>
                       <option value="M">M</option>
@@ -249,14 +252,14 @@
                     </select>
 
                     <select name="Color" id="colorPricing">
-                      <option value="">--Please choose a color option--</option>
+                      <option value="">--Choose color option--</option>
                       <option value="Black">Black</option>
                       <option value="White">White</option>
                       <option value="Gray">Gray</option>
                     </select>
                  
                     <button type="submit" class="btn submit-info" id="submitBtnPricing">Submit</button>
-                    <button type="button" class="btn cancel" id="closeBtn" >Close</button>
+                    <button type="button" class="btn cancel" id="closeBtnPricing" >Close</button>
                   </form>
                 </div>
               </div>
@@ -390,8 +393,8 @@
 
                     <input type="text" id="descriptionCustom" placeholder="Describe color request" name="Custom Color">
                  
-                    <button type="submit" class="btn submit-info" id="submitBtnPricing">Submit</button>
-                    <button type="button" class="btn cancel" id="closeBtn" >Close</button>
+                    <button type="submit" class="btn submit-info" id="submitBtnCustom">Submit</button>
+                    <button type="button" class="btn cancel" id="closeBtnCustom" >Close</button>
                   </form>
                 </div>
               </div>
