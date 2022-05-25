@@ -216,99 +216,7 @@
           </div>
 
           <!-- ***************************POP UP FORMS********************************** -->
-            <!-- PRICING REQUEST FORM -->
-              <div class="loginPopup">
-                <div class="formPopup" id="popupFormPricing">
-                  <form  class="formContainer" data-netlify="true" name="Pricing Request">
-                    <h2>Request Pricing Quote</h2>
-                    
-                    <input type="text" id="namePricing" placeholder="Your Name" name="Name">
-                    
-                    <input type="text" id="companyPricing" placeholder="Company Name" name="Company name" required>
-                     
-                    <input type="text" id="addressPricing" placeholder="Street Address" name="Street Address" required>
-                 
-                    <input type="text" id="cityPricing" placeholder="City, State" name="City name" required>
-                 
-                    <input type="text" id="zipPricing" placeholder="Zip Code" name="Zip code" required>
-                
-                    <input type="text" id="phonePricing" placeholder="Phone Number" name="Phone">
-                 
-                    <input type="email" id="emailPricing" placeholder="Your Email" name="Email" required>
-
-                    <input type="date" id="targetDatePricing" placeholder="Target Delivery Date" name="Target Delivery Date">
-
-                    <input type="number" id="quantityPricing" placeholder="Quantity" name="Quantity">
-
-                    <select name="Size" id="sizePricing" style="padding-right: -30px">
-                      <option value="">--Please choose a size option--</option>
-                      <option value="XS">XS</option>
-                      <option value="S">S</option>
-                      <option value="M">M</option>
-                      <option value="L">L</option>
-                      <option value="XL">XL</option>
-                      <option value="XXL">XXL</option>
-                      <option value="XXXL">XXXL</option>
-                    </select>
-
-                    <select name="Color" id="colorPricing">
-                      <option value="">--Please choose a color option--</option>
-                      <option value="Black">Black</option>
-                      <option value="White">White</option>
-                      <option value="Gray">Gray</option>
-                    </select>
-                 
-                    <button type="submit" class="btn submit-info" id="submitBtnPricing">Submit</button>
-                    <button type="button" class="btn cancel" id="closeBtnPricing" >Close</button>
-                  </form>
-                </div>
-              </div>
-            <!-- SHIPPING QUOTE REQUEST FORM -->
-              <div class="loginPopup">
-                <div class="formPopup" id="popupFormShipping">
-                  <form  class="formContainer" data-netlify="true" name="Shipping Quote Request">
-                    <h2>Request Shipping Quote</h2>
-                    <input type="text" id="nameShipping" placeholder="Your Name" name="Name">
-                    
-                    <input type="text" id="companyShipping" placeholder="Company Name" name="Company name" required>
-                     
-                    <input type="text" id="addressShipping" placeholder="Street Address" name="Street address" required>
-                 
-                    <input type="text" id="cityShipping" placeholder="City, State" name="City name" required>
-                 
-                    <input type="text" id="zipShipping" placeholder="Zip Code" name="Zip code" required>
-                
-                    <input type="text" id="phoneShipping" placeholder="Phone Number" name="Phone">
-                 
-                    <input type="email" id="emailShipping" placeholder="Your Email" name="Email" required>
-
-                    <input type="date" id="targetDateShipping" placeholder="Target Delivery Date" name="Target Delivery Date">
-
-                    <input type="number" id="quantityShipping" placeholder="Quantity" name="Quantity">
-
-                    <select name="Size" id="sizeShipping">
-                      <option value="">--Please choose a size option--</option>
-                      <option value="XS">XS</option>
-                      <option value="S">S</option>
-                      <option value="M">M</option>
-                      <option value="L">L</option>
-                      <option value="XL">XL</option>
-                      <option value="XXL">XXL</option>
-                      <option value="XXXL">XXXL</option>
-                    </select>
-
-                    <select name="Color" id="colorShipping">
-                      <option value="">--Please choose a color option--</option>
-                      <option value="Black">Black</option>
-                      <option value="White">White</option>
-                      <option value="Gray">Gray</option>
-                    </select>
-                    
-                    <button type="submit" class="btn submit-info" id="submitBtnShipping">Submit</button>
-                    <button type="button" class="btn cancel" id="closeBtnShipping" >Close</button>
-                  </form>
-                </div>
-              </div>
+            
               <!-- *******************STANDARD TEE SAMPLE REQUEST FORM******************** -->
               <div class="loginPopup">
                 <div class="formPopup" id="popupFormSample">
@@ -322,9 +230,9 @@
                  
                     <input type="text" id="citySample" placeholder="City, State" name="City name" required>
                  
-                    <input type="text" id="zipSample" placeholder="Zip Code" name="Zip code" required>
+                    <input type="number" id="zipSample" placeholder="Zip Code" name="Zip code" required>
                 
-                    <input type="text" id="phoneSample" placeholder="Phone Number" name="Phone">
+                    <input type="number" id="phoneSample" placeholder="Phone Number" name="Phone">
 
                     <input type="email" id="emailSample" placeholder="Your Email" name="Email" required>
 
@@ -370,9 +278,9 @@
                  
                     <input type="text" id="cityCustom" placeholder="City, State" name="City name" required>
                  
-                    <input type="text" id="zipCustom" placeholder="Zip Code" name="Zip code" required>
+                    <input type="number" id="zipCustom" placeholder="Zip Code" name="Zip code" required>
                 
-                    <input type="text" id="phoneCustom" placeholder="Phone Number" name="Phone">
+                    <input type="number" id="phoneCustom" placeholder="Phone Number" name="Phone">
                  
                     <input type="email" id="emailCustom" placeholder="Your Email" name="Email" required>
 
@@ -395,6 +303,100 @@
                  
                     <button type="submit" class="btn submit-info" id="submitBtnCustom">Submit</button>
                     <button type="button" class="btn cancel" id="closeBtnCustom" >Close</button>
+                  </form>
+                </div>
+              </div>
+
+              <!-- PRICING REQUEST FORM -->
+              <div class="loginPopup">
+                <div class="formPopup" id="popupFormPricing">
+                  <form  class="formContainer" data-netlify="true" name="Pricing Request">
+                    <h2>Request Pricing Quote</h2>
+                    
+                    <input type="text" id="namePricing" placeholder="Your Name" name="Name">
+                    
+                    <input type="text" id="companyPricing" placeholder="Company Name" name="Company name" required>
+                     
+                    <input type="text" id="addressPricing" placeholder="Street Address" name="Street Address" required>
+                 
+                    <input type="text" id="cityPricing" placeholder="City, State" name="City name" required>
+                 
+                    <input type="number" id="zipPricing" placeholder="Zip Code" name="Zip code" required>
+                
+                    <input type="number" id="phonePricing" placeholder="Phone Number" name="Phone">
+                 
+                    <input type="email" id="emailPricing" placeholder="Your Email" name="Email" required>
+
+                    <input type="date" id="targetDatePricing" placeholder="Target Delivery Date" name="Target Delivery Date">
+
+                    <input type="number" id="quantityPricing" placeholder="Quantity" name="Quantity">
+
+                    <select name="Size" id="sizePricing" style="padding-right: -30px">
+                      <option value="">--Please choose a size option--</option>
+                      <option value="XS">XS</option>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                      <option value="XXL">XXL</option>
+                      <option value="XXXL">XXXL</option>
+                    </select>
+
+                    <select name="Color" id="colorPricing">
+                      <option value="">--Please choose a color option--</option>
+                      <option value="Black">Black</option>
+                      <option value="White">White</option>
+                      <option value="Gray">Gray</option>
+                    </select>
+                 
+                    <button type="submit" class="btn submit-info" id="submitBtnPricing">Submit</button>
+                    <button type="button" class="btn cancel" id="closeBtnPricing" >Close</button>
+                  </form>
+                </div>
+              </div>
+            <!-- SHIPPING QUOTE REQUEST FORM -->
+              <div class="loginPopup">
+                <div class="formPopup" id="popupFormShipping">
+                  <form  class="formContainer" data-netlify="true" name="Shipping Quote Request">
+                    <h2>Request Shipping Quote</h2>
+                    <input type="text" id="nameShipping" placeholder="Your Name" name="Name">
+                    
+                    <input type="text" id="companyShipping" placeholder="Company Name" name="Company name" required>
+                     
+                    <input type="text" id="addressShipping" placeholder="Street Address" name="Street address" required>
+                 
+                    <input type="text" id="cityShipping" placeholder="City, State" name="City name" required>
+                 
+                    <input type="number" id="zipShipping" placeholder="Zip Code" name="Zip code" required>
+                
+                    <input type="number" id="phoneShipping" placeholder="Phone Number" name="Phone">
+                 
+                    <input type="email" id="emailShipping" placeholder="Your Email" name="Email" required>
+
+                    <input type="date" id="targetDateShipping" placeholder="Target Delivery Date" name="Target Delivery Date">
+
+                    <input type="number" id="quantityShipping" placeholder="Quantity" name="Quantity">
+
+                    <select name="Size" id="sizeShipping">
+                      <option value="">--Please choose a size option--</option>
+                      <option value="XS">XS</option>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                      <option value="XXL">XXL</option>
+                      <option value="XXXL">XXXL</option>
+                    </select>
+
+                    <select name="Color" id="colorShipping">
+                      <option value="">--Please choose a color option--</option>
+                      <option value="Black">Black</option>
+                      <option value="White">White</option>
+                      <option value="Gray">Gray</option>
+                    </select>
+                    
+                    <button type="submit" class="btn submit-info" id="submitBtnShipping">Submit</button>
+                    <button type="button" class="btn cancel" id="closeBtnShipping" >Close</button>
                   </form>
                 </div>
               </div>
