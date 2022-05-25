@@ -344,7 +344,9 @@ header div h3{
       }
       .formContainer input[type=text],
       .formContainer input[type=password],
-	  .formContainer input[type=email] {
+	  .formContainer input[type=email],
+	  .formContainer input[type=date],
+	  .formContainer select {
         width: 100%;
         padding: 15px;
         margin: 5px 0 20px 0;
@@ -354,7 +356,9 @@ header div h3{
       }
       .formContainer input[type=text]:focus,
       .formContainer input[type=password]:focus, 
-	  .formContainer input[type=email]:focus {
+	  .formContainer input[type=email]:focus
+	  .formContainer input[type=date]:focus,
+	  .formContainer select:focus {
         background-color: var(--white);
         outline: none;
       }
@@ -801,7 +805,9 @@ header div h3{
       }
       .formContainer input[type=text],
       .formContainer input[type=password],
-	  .formContainer input[type=email] {
+	  .formContainer input[type=email],
+	  .formContainer input[type=date],
+	  .formContainer select {
         width: 100%;
         padding: 15px;
         margin: 5px 0 20px 0;
@@ -810,8 +816,10 @@ header div h3{
         background: var(--white);
       }
       .formContainer input[type=text]:focus,
-      .formContainer input[type=password]:focus,
-	  .formContainer input[type=email]:focus {
+      .formContainer input[type=password]:focus, 
+	  .formContainer input[type=email]:focus
+	  .formContainer input[type=date]:focus,
+	  .formContainer select:focus {
         background-color: var(--white);
         outline: none;
       }
